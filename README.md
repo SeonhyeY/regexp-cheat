@@ -28,7 +28,7 @@ new RegExp('[a-z]', 'gi');
 
 ```js
 const str = `
-010-9570-4934
+010-9570-4934.
 syoon330@gmail.com
 http://www.omdbapi.com/?apikey=7035c60c&s=frozen
 The quick brown fox jumps over the lazy dog.
@@ -43,3 +43,11 @@ abbcccdddd
 test | `RegExp.test(str)` | 일치 여부(Boolean) 반환
 match | `String.match(RegExp)` | 일치하는 문자의 배열(Array)
 replace | `String.replace(RegExp, Replace)` | 일치하는 문자를 대체
+
+## flag(option)
+
+flag | instruction
+--|--
+g | 모든 문자 일치 (global)
+i | 영어 대소문자의 구분 없이 일치 (ignore case)
+m | 여러 줄 일치 (multi line)
